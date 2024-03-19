@@ -1,0 +1,17 @@
+<?php
+
+//while is ook een manier om een loop te maken 
+// for($i=0; $i <10; $i++      )
+{
+    //DE code die je wilt herhalen staat tussen deze haakjes
+}
+
+
+for($i=0; $i <=25250000; $i++)
+{
+    echo "hallo\n";
+}
+
+
+?>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        function changeimg(afb) {
+            document.getElementById('afb').src= afb;
+            document.getElementById('afb').style="width: 100px;"
+
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <button onclick="changeimg('koe.jpg')">koe</button>
+    <button onclick="changeimg('schaap.jpg')">schaap</button> <br>
+    <button onclick="changeimg('hert.jpg')">hert</button> <br>
+    <button onclick="changeimg('hond.jpg')">hond</button> <br>
+    
+    <img id="afb" src="koe.jpg"> </img>
+    
+
+
+</body>
+
+</html>

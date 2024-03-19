@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="inputvalue.css">
+    <title>Inputvalue</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Output:</th>
+        </tr>
+        <tr>
+            <th><textarea id="output" name="output" class="output" rows="4" cols="20" placeholder="-"></textarea></th>
+        </tr>
+    </table>
+
+    <form id="formulier">
+        <table>
+            <tr>
+                <th>Voornaam:</th>
+                <th><input type="text" id="vnaam" name="vnaam" class="input" placeholder="voornaam"></th>
+            </tr>
+            <tr>
+                <th>Achternaam:</th>
+                <th><input type="text" id="anaam" name="anaam" class="input" placeholder="achternaam"></th>
+            </tr>
+            <tr>
+                <th>Leeftijd:</th>
+                <th><input type="number" id="leeftijd" name="leeftijd" class="input" placeholder="leeftijd"></th>
+            </tr>
+            <tr>
+                <th>Over:</th>
+                <th><input type="number" id="over" name="over" class="input" placeholder="x"> jaar..</th>
+            </tr>
+        </table>
+    </form>
+
+    <button onclick="display()">plaats tekst</button>
+
+    <script>
+        function display() {
+            const vnaam = document.getElementById('vnaam').value;
+            const anaam = document.getElementById('anaam').value;
+            const over = document.getElementById('over').value;
+            const leeftijd = document.getElementById('leeftijd').value;  
+            document.getElementById('output').innerHTML +='Hallo ik ben ' + vnaam + ' ' + anaam + '. Over ' + over + ' jaar ben ik ' + leeftijd + ' jaar'
+            document.getElementById('vnaam').value = '';
+            document.getElementById('anaam').value = '';
+            document.getElementById('over').value = '';
+            document.getElementById('leeftijd').value = ''; 
+        }
+
+        
+
+    </script>
+</body>
+
+</html>

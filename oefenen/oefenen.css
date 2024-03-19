@@ -1,0 +1,73 @@
+body
+{
+    background-color: black;
+}
+#par1
+{
+    border: solid gold 2px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#par2
+{
+    border: dotted blue 2px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#par3
+{
+    border: ridge pink 2px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+#plaatjefc
+{
+    left: 0px;
+    top: 300px;
+    position: absolute;
+}
+
+#plaatjefc img
+{
+    width: 200px; 
+    height: 200px;
+}
+/* top en left gebruiken voor positioneren
+/*boxmodel css opzoeken*/
+#gio
+{
+    left: 0px;                                /*margin-left: 40px;*/
+    top: 600px;
+    position: absolute;
+    
+}
+
+#gio img
+{
+    width: 200px; 
+    height: 200px;
+}
+/* margin gebruik je om dingeen een klein beetje op te schuiven*/
+
+#enzoknol
+{
+    left: 0px;
+    top: 0px;
+    position:absolute;
+}
+
+#enzoknol img
+{    
+    width: 200px; 
+    height:200px;
+}

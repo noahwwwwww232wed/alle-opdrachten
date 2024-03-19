@@ -1,0 +1,26 @@
+td{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+.nal{
+    border: solid 1px;
+}
+
+#tabel{
+    border-collapse: collapse;
+}
+
+h1{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#output{
+    border: solid red;
+    width: 800px;
+    height: 100px;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}

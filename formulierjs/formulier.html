@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>formulier</title>
+</head>
+
+<body>
+    <script src="formulier.js"></script>
+    <form id="formulier">
+        <table id="table">
+            <tr>
+                <th>*Naam:</th>
+                <th><input type="text"  id="voornaam" placeholder="vnaam" onblur="check1()"> <input type="text" id="tv"
+                        placeholder="tv" onblur="check1()"> <input type="text" id="achternaam" placeholder="anaam" onblur="check1()"></th>
+            </tr>
+            <tr>
+                <th>*adres:</th>
+                <th><input  type="text" id="adres" placeholder="adres" size="51" onblur="check1()"></th>
+            </tr>
+            <tr>
+                <th>*PC Plaats:</th>
+                <th><input type="text" id="postcode" placeholder="postcode" size="4" onblur="check1()"> <input type="text" id="plaats"
+                        placeholder="plaats" onblur="check1()"></th>
+            </tr>
+            <tr>
+                <th>Telefoon:</th>
+                <th><input type="number" id="telefoon" placeholder="telefoon"></th>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <th><input type="text" id="email" placeholder="email"></th>
+            </tr>
+            <tr>
+                <th>Geslacht:</th>
+                <th>
+                    <input type="radio" id="vrouw" name="knop">Vrouw
+                    <input type="radio" id="man" name="knop">Man
+                </th>
+            </tr>
+
+            <tr>
+                <th>Boyband:</th>
+                <th><select id="bands">
+                        <option value="band1">K3</option>
+                        <option value="band2">brum brum</option>
+                        <option value="band3">mega toby</option>
+                    </select></th>
+            </tr>
+            <tr>
+                <th>Geb.datum:</th>
+                <th><input type="date" id="date"></th>
+            </tr>
+            <tr>
+                <th>*verplichte velden</th>
+                <th><button onclick="input()">verstuur</button></th>
+            </tr>
+
+
+        </table>
+    </form>
+    </div>
+
+    <div id="foutmeldingen"><h1>Foutmeldingen:</h1></div>
+    <div id="output"></div>
+</body>
+
+</html>

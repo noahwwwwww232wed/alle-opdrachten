@@ -1,0 +1,13 @@
+hoe moet je die warning fixen
+
+if(isset($_GET, daarvoor gebruik je dit met ook nog van {} deze haakjes.
+
+zie opdracht leeftijd 
+als je $i . "iets" gebruikt telt hij hoevaak die $i is eigenlijk een transliterator_transliterate
+
+voor while loops zie ss op laptop
+$i++ is plus 1 en dan begint de loop weer opnieuw dus als je $i < 100 hebt dan doet hij het 99 keer omdat 100 niet kleiner is dan 100
+
+bmi, lotto goede opdrachten voor theorie van les 2
+
+voor styling van je website moet je naar w3 school gaan en css opzoeken 

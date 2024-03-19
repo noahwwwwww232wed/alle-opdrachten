@@ -1,0 +1,18 @@
+#formulier{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+th{
+    text-align: left;
+}
+
+#over{
+    width: 30px;
+}
+
+
+#output{
+    width: 270px;
+}
