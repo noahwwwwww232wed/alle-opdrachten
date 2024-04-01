@@ -1,0 +1,30 @@
+td{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+.nal{
+    border: solid 1px;
+}
+
+#tabel{
+    border-collapse: collapse;
+}
+
+#prullenbak{
+    width: 30px;
+    height: 30px;
+}
+
+#update{
+    text-align: center;
+}
+
+#form-container{
+    text-align: center;
+}
+
+#form{
+    display: inline-block;
+}
+
