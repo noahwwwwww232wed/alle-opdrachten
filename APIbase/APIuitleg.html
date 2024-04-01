@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>API</title>
+</head>
+
+<body>
+    <h1>Biertjes</h1>
+
+    <div id="outputDiv"></div>
+    
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js">
+
+        </script>
+        <script>
+            let url = "https://15euros.nl/api/bier_basic.php";
+
+            // als eerst wil je json ophalen je hebt hier voor 4 manieren
+            //cdn van axios laden omdat je een foutmelding krijgt omdat hij het woord axios niet herkent
+            // console.log("response:" , response.data ); dit gebruik je om te checken of die de data ophaalt 
+            // zorg ervoor dat je een div aan maakt waar je de output in laat zien dit is een manier om in js html output te showen
+            // de html += tweede regel zorgt ervoor dathij de oude html dus "biertabel" plus het andere doet
+            // html += aBiertjes[0]; zorgt ervoor dat je object object krijgt dit komt omdat je niet duidelijk bent als je .naam erachter zet krijg je de naam van het biertje
+
+
+
+            axios.get(url)
+                .then(function (response) {
+                    //console.log("");
+                    //console.log("response.data: " , response.data);
+                    let aBiertjes = response.data;
+                    console.log("aBiertjes: ", aBiertjes);
+                    let html = "";
+                    html += "<table id='tabel'>";
+                    html += "<tr>";
+                    
+                    html += "<th class='nbg'>Nr</th>"
+                    html += "<th class='nbg'>Naam</th>";
+                    html += "<th class='nbg'>Brouwer</th>";
+                    html += "<th class='nbg'>Gisting</th>";
+                    
+                    html += "</tr>";
+
+
+                    for (i = 0; i < 750; i++) {
+                        html += "<tr>";
+                        html += "<td>" + (i + 1) + "</td>";
+                        html += "<td>" + aBiertjes[i].naam + "</td>";
+                        html += "<td>" + aBiertjes[i].brouwer + "</td>";
+                        html += "<td>" + aBiertjes[i].gisting + "</td>";
+                        // html += (i+1)+ ". " + aBiertjes[i].naam + ", " + aBiertjes[i].brouwer + abiertjes[i].gisting + "<br>";
+                        html += "</tr>";
+
+                    }
+                        html += "</table>";
+                    document.getElementById('outputDiv').innerHTML = html;
+                    //console.log("\"response\" van Axios get-request: ", response); //hele response, bekijk hem: er staat meer dan alleen de data in
+                    //let json = response.data; // de eigenschap "data" van het object "response" bevat de gevraagde json
+                    //console.log("Bier, geladen met AJAX via Axios ", json);
+                    //fJson2Html(json, "Axios get request"); // geef JSON en title door aan function
+                })
+
+        </script>
+ 
+</body>
+
+</html>
